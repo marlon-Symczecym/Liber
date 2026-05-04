@@ -17,10 +17,12 @@ qt_standard_project_setup()
 file(GLOB_RECURSE SOURCES
     "main.cpp"
     "src/*.cpp"
+    "src/database/*.cpp"
 )
 
 file(GLOB_RECURSE HEADERS
     "src/*.h"
+    "src/database/*.h"
 )
 
 file(GLOB_RECURSE FORMS
@@ -36,8 +38,9 @@ qt_add_executable(Liber
 
 target_include_directories(Liber
     PRIVATE
-        src
-        src/ui
+    src
+    src/ui
+    src/database
 )
 
 target_link_libraries(Liber
