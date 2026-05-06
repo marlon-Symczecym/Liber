@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/icons/home.svg</file>
+        <file>resources/icons/book.svg</file>
+        <file>resources/icons/author.svg</file>
+        <file>resources/icons/favorite.svg</file>
+        <file>resources/icons/settings.svg</file>
+        <file>resources/icons/info.svg</file>
+        <file>resources/icons/exit.svg</file>
+    </qresource>
+</RCC>

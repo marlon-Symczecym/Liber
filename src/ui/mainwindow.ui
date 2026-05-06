@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>LIBER - Biblioteca Pessoal</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #cbdbf5</string>
@@ -40,11 +40,11 @@
      <number>0</number>
     </property>
     <item row="0" column="0" rowspan="3">
-     <widget class="QFrame" name="frame_sidebar">
+     <widget class="QFrame" name="frameSidebar">
       <property name="minimumSize">
        <size>
         <width>180</width>
-        <height>0</height>
+        <height>25</height>
        </size>
       </property>
       <property name="maximumSize">
@@ -80,11 +80,11 @@ border: 1px solid #aaa;</string>
         <number>0</number>
        </property>
        <item row="0" column="0">
-        <widget class="QFrame" name="frame_logo_title">
+        <widget class="QFrame" name="frameLogoTitle">
          <property name="minimumSize">
           <size>
            <width>180</width>
-           <height>80</height>
+           <height>25</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -105,7 +105,13 @@ border: none;</string>
          </property>
          <layout class="QFormLayout" name="formLayout">
           <item row="0" column="0">
-           <widget class="QLabel" name="lbl_title">
+           <widget class="QLabel" name="lblTitle">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="styleSheet">
              <string notr="true">color: black;
 font-weight: bold;</string>
@@ -116,7 +122,13 @@ font-weight: bold;</string>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QLabel" name="lbl_title_2">
+           <widget class="QLabel" name="lblVersion">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="styleSheet">
              <string notr="true">color: #aaa;
 font-size: 12px;
@@ -131,7 +143,13 @@ font-weight: italic;</string>
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QFrame" name="frame_sidebar_menu">
+        <widget class="QFrame" name="frameSidebarMenu">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">border: none;</string>
          </property>
@@ -141,17 +159,261 @@ font-weight: italic;</string>
          <property name="frameShadow">
           <enum>QFrame::Shadow::Raised</enum>
          </property>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>9</y>
+            <width>161</width>
+            <height>181</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>25</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="btnHome">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #1E293B;
+font-size: 14px;
+font-weight: bold;
+text-align: left;</string>
+             </property>
+             <property name="text">
+              <string>Início</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../../resource.qrc">
+               <normaloff>:/resources/icons/home.svg</normaloff>:/resources/icons/home.svg</iconset>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="btnMyBooks">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #1E293B;
+font-size: 14px;
+font-weight: bold;
+text-align: left;</string>
+             </property>
+             <property name="text">
+              <string>Minha Biblioteca</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../../resource.qrc">
+               <normaloff>:/resources/icons/book.svg</normaloff>:/resources/icons/book.svg</iconset>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="btnAuthors">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #1E293B;
+font-size: 14px;
+font-weight: bold;
+text-align: left;</string>
+             </property>
+             <property name="text">
+              <string>Escritores</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../../resource.qrc">
+               <normaloff>:/resources/icons/author.svg</normaloff>:/resources/icons/author.svg</iconset>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="btnFavorite">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #1E293B;
+font-size: 14px;
+font-weight: bold;
+text-align: left;</string>
+             </property>
+             <property name="text">
+              <string>Favoritos</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../../resource.qrc">
+               <normaloff>:/resources/icons/favorite.svg</normaloff>:/resources/icons/favorite.svg</iconset>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="btnSettings">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #1E293B;
+font-size: 14px;
+font-weight: bold;
+text-align: left;</string>
+             </property>
+             <property name="text">
+              <string>Configurações</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../../resource.qrc">
+               <normaloff>:/resources/icons/settings.svg</normaloff>:/resources/icons/settings.svg</iconset>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QFrame" name="frameFooter">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e0e3e5;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: #6d7a77;
+font-weight: bold</string>
+         </property>
+         <property name="text">
+          <string>Total: 1234 livros</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>809</width>
+           <height>9</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">color: #6d7a77;
+font-weight: bold</string>
+         </property>
+         <property name="text">
+          <string>Banco de Dados: CONECTADO</string>
+         </property>
         </widget>
        </item>
       </layout>
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QFrame" name="frame_header">
+     <widget class="QFrame" name="frameHeader">
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>50</height>
+        <height>25</height>
        </size>
       </property>
       <property name="maximumSize">
@@ -170,44 +432,94 @@ border: none;</string>
       <property name="frameShadow">
        <enum>QFrame::Shadow::Raised</enum>
       </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>535</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLineEdit" name="editSearch">
+           <property name="minimumSize">
+            <size>
+             <width>400</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: white;
+padding-left: 12px;</string>
+           </property>
+           <property name="maxLength">
+            <number>50</number>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Pesquisar na biblioteca...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSearch">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #6d7a77;
+color: white;
+font-weight: bold;
+border: 1px solid #3d4947;</string>
+           </property>
+           <property name="text">
+            <string>Pesquisar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QFrame" name="frame">
-      <property name="styleSheet">
-       <string notr="true">background-color: #eaf1ff;</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QFrame" name="frame_header_2">
+     <widget class="QWidget" name="widgetCentral" native="true">
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>20</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
         <height>25</height>
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: #e0e3e5;
-border: none;</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
+       <string notr="true">background-color: #eaf1ff;</string>
       </property>
      </widget>
     </item>
@@ -222,13 +534,75 @@ border: none;</string>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <widget class="QMenu" name="menuAdicionar">
+     <property name="title">
+      <string>Adicionar</string>
+     </property>
+     <addaction name="actionNewBook"/>
+     <addaction name="actionNewAuthor"/>
+    </widget>
+    <addaction name="menuAdicionar"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuAjuda"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar">
-   <property name="enabled">
-    <bool>true</bool>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../../resource.qrc">
+     <normaloff>:/resources/icons/info.svg</normaloff>:/resources/icons/info.svg</iconset>
    </property>
-  </widget>
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="../../resource.qrc">
+     <normaloff>:/resources/icons/exit.svg</normaloff>:/resources/icons/exit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionNewBook">
+   <property name="icon">
+    <iconset resource="../../resource.qrc">
+     <normaloff>:/resources/icons/book.svg</normaloff>:/resources/icons/book.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Livro</string>
+   </property>
+  </action>
+  <action name="actionNewAuthor">
+   <property name="icon">
+    <iconset resource="../../resource.qrc">
+     <normaloff>:/resources/icons/author.svg</normaloff>:/resources/icons/author.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Escritor</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

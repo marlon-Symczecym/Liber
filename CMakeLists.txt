@@ -34,6 +34,7 @@ qt_add_executable(Liber
     ${SOURCES}
     ${HEADERS}
     ${FORMS}
+    resource.qrc
 )
 
 target_include_directories(Liber
