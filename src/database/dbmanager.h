@@ -16,7 +16,7 @@ public:
     void disconnect();
 
 private:
-    const QString configPath = "C:/Users/marlo/Desktop/Projetos/Liber/config.ini";
+    const QString configPath = "/home/marlon-dev/Desktop/Liber/config.ini";
 };
 
 #endif // DBMANAGER_H
